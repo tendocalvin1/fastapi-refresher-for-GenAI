@@ -25,4 +25,4 @@ posts : list[dict] = [
 
 @app.get("/home", include_in_schema=False)
 async def home(request: Request):
-    return templates.TemplateResponse(request, "home.html", {"posts": posts})
+    return templates.TemplateResponse(request, "home.html", {"posts": posts, "title": "Home"})
