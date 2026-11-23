@@ -8,5 +8,9 @@
 <body>
     <h1>Tendo's Goal for 2028.</h1>
     <p>The goal is to get comfortable at GenAI engineering so that am able to land remote roles.</p>
+    {% for post in posts %}
+    <h2>{{post.title}}</h2>
+    <p>{{post.content}}</p>
+    {% endfor %}
 </body>
 </html>
